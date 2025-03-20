@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinchan Notepad</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="flex">
+    
+    <img src="./p.png" class="sin">
+    <img src="./s.png" class="sin2">
+    <div class="container">
+        <h1> Notepad</h1>
+        <h2>Write Your Notes, and Stay Silly!</h2>
+
+        <!-- Textarea for writing notes -->
+        <textarea id="noteText" placeholder="Write your note here..."></textarea>
+
+        <!-- Save Note Button -->
+        <button id="saveBtn">Save Note</button>
+
+        <!-- Show Saved Notes Button -->
+        <button id="showBtn">Show Saved Notes</button>
+        
+        <!-- List of Saved Notes (Hidden by default) -->
+        <div class="savedNotes" id="savedNotes">
+            <ul id="notesList"></ul>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

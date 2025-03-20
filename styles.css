@@ -1,0 +1,151 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: #ffeb3b; /* Bright yellow background to match Sinchan's cheerful vibe */
+    color: #e91e63; /* Sinchan's classic pinkish tone */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+   
+}
+
+.sin{
+    position: absolute;
+    left: 70%;
+    width: 300px;
+    filter: drop-shadow(10px 5px 5px black);
+}
+.sin2{
+    position: absolute;
+    left: 10%;
+    width: 200px;
+    filter: drop-shadow(10px 5px 5px black);
+   
+}
+
+/* Container Style */
+.container {
+    background: #fff; /* White background for the notepad */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    
+}
+
+/* Title Style */
+h1 {
+    font-size: 3rem;
+    color: #ff4081; /* Bright pink to reflect Sinchan's vibe */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: #ff5722;
+    margin-bottom: 20px;
+}
+
+/* Textarea Style */
+textarea {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #ff4081; /* Pink border for the textarea */
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #000;
+    background-color: #f0f0f0; /* Light background */
+    resize: none;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #ff4081; /* Sinchan pink button */
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effects */
+button:hover {
+    background-color: #e91e63; /* Darker pink on hover */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Saved Notes Section */
+.savedNotes {
+    display: none;
+    margin-top: 20px;
+}
+
+/* List Style */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    background-color: #f8bbd0; /* Soft pink background for saved notes */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 1.2rem;
+    border: 1px solid #e91e63; /* Border to match button style */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+}
+
+/* Edit and Delete Buttons */
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+button.editBtn, button.deleteBtn {
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+button.editBtn:hover, button.deleteBtn:hover {
+    color: blueviolet;
+    transform: scale(1.2);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* Sinchan Image Icon */
+
